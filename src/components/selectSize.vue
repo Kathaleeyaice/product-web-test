@@ -1,11 +1,23 @@
 <template>
     <div class="selectSize">
         <p>Size</p>
-        <v-radio-group v-model="size" @change="selectSize" row>
-            <div v-for="size in getSizeList" :key="size">
-                <v-radio :label="size" :value="size" color="deep-purple"></v-radio>
-            </div>
-        </v-radio-group>
+        <v-btn-toggle
+            v-model="toggle_exclusive"
+            mandatory
+            group
+            @change="selectSize"
+          >
+          <div v-for="size in getSizeList" :key="size">
+            <v-btn
+              :label="size"
+              :value="size"
+              class="mx-1"
+              depressed
+            >
+            {{size}}
+            </v-btn>
+          </div>
+        </v-btn-toggle>
     </div>
 </template>
 

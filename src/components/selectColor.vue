@@ -1,11 +1,23 @@
 <template>
     <div class="selectColor">
         <p>Color</p>
-        <v-radio-group v-model="selectedColor" @change="selectColor" row>
-            <div v-for="color in productColor" :key="color">
-                <v-radio :label="color" :value="color" color="deep-purple"></v-radio>
-            </div>
-        </v-radio-group>
+        <v-btn-toggle
+            v-model="toggle_exclusive"
+            mandatory
+            group
+            @change="selectColor"
+          >
+          <div v-for="color in productColor" :key="color">
+            <v-btn
+              :label="color"
+              :value="color"
+              class="mx-1"
+              depressed
+            >
+            {{color}}
+            </v-btn>
+          </div>
+        </v-btn-toggle>
     </div>
 </template>
 
