@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # product-web
 
 ## Project setup
@@ -22,3 +23,6 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+=======
+# product-web-test
+>>>>>>> 8ba8af258102733efa2eab0b56d6450e96c5a120
