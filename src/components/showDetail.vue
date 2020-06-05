@@ -24,7 +24,7 @@
 import { mapState, mapGetters } from 'vuex'
 
 export default {
-  name: 'detail',
+  name: 'showDetail',
   computed: {
     ...mapState(['name', 'description']),
     ...mapGetters(['showPrice'])
