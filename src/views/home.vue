@@ -17,7 +17,7 @@
             <detail/>
             <v-card
                 class="mx-6"
-                flat="true"
+                flat
             >
               <selectColor/>
               <selectSize/>

@@ -10,7 +10,7 @@
             </v-app-bar>
             <v-card
                 class="px-6"
-                flat="true"
+                flat
             >
             <v-img :src="`${photoURL}`" width="40%" class="mx-auto"/>
             <v-card-title>
@@ -26,11 +26,14 @@
                 <v-row>
                     <v-col>
                         <router-link to="/" >
-                            <v-btn text=true> Back </v-btn>
+                            <v-btn color="deep-purple" dark> Back </v-btn>
                         </router-link>
                     </v-col>
                     <v-col>
-                        <v-btn text=true class="float-md-right" v-on:click="buyNow()"> Buy Now </v-btn>
+                        <!-- <v-btn text=true class="float-md-right" v-on:click="buyNow()"> Buy Now </v-btn> -->
+                        <router-link to="/checkout">
+                            <v-btn class="float-md-right" color="deep-purple" dark> BUY NOW </v-btn>
+                        </router-link>
                     </v-col>
                 </v-row>
             </v-container>

@@ -1,9 +1,9 @@
 <template>
     <div class="selectQuantity">
       <p>Quantity</p>
-      <v-btn text=true @click="decrement">-</v-btn>
+      <v-btn text @click="decrement">-</v-btn>
         {{quantity}}
-      <v-btn text=true @click="increment">+</v-btn>
+      <v-btn text @click="increment">+</v-btn>
     </div>
 </template>
 
